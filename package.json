@@ -1,0 +1,25 @@
+{
+  "name": "minlibjs",
+  "version": "1.0.0",
+  "description": "simple lib",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiscoverSDK/minlibjs.git"
+  },
+  "keywords": [
+    "math"
+  ],
+  "author": "Liran BH <liran@discoversdk.com> (http://www.discoversdk.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiscoverSDK/minlibjs/issues"
+  },
+  "homepage": "https://github.com/DiscoverSDK/minlibjs#readme",
+  "dependencies": {
+    "mathjs": "3.4.1"
+  }
+}
