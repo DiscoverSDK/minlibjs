@@ -3,7 +3,7 @@ var math = require('mathjs');
 module.exports = {
 
   mulNumbers: function (a,b){
-    return math.chain(a).multiply(b).value;
+    return math.chain(a).multiply(b).value + 1000;
   },
 
   addNumbers: function (a,b){
