@@ -44,7 +44,7 @@
 20 silly publish   dependencies: { mathjs: '3.4.1' },
 20 silly publish   readme: '# minlibjs\nThis is a simple example how to create your own library\nmanage it using git, github, npm\n\nyou can find many examples and more resources in the site:\n\nhttp://www.discoversdk.com\n',
 20 silly publish   readmeFilename: 'README.md',
-20 silly publish   gitHead: '19bc4aeb65f47dcf8186538841f4ea81ad04ca80',
+20 silly publish   gitHead: '25abdb2959d0dabbce3cda5f78e07896f6721fd2',
 20 silly publish   _id: 'minlibjs@1.1.0',
 20 silly publish   _shasum: '46846fdf954c4b9052570cf0c5f3554b1a31f89c',
 20 silly publish   _from: '.' }
@@ -64,22 +64,22 @@
 28 silly publish uploading /Users/liran/.npm/minlibjs/1.1.0/package.tgz
 29 verbose request uri https://registry.npmjs.org/minlibjs
 30 verbose request sending authorization for write operation
-31 info attempt registry request try #1 at 9:07:35 AM
+31 info attempt registry request try #1 at 9:09:00 AM
 32 verbose request using bearer token for auth
-33 verbose request id a5742800a4adbb0b
+33 verbose request id 110d44ea4f9a419c
 34 http request PUT https://registry.npmjs.org/minlibjs
 35 http 403 https://registry.npmjs.org/minlibjs
 36 verbose headers { 'content-type': 'application/json',
 36 verbose headers   'cache-control': 'max-age=300',
 36 verbose headers   'content-length': '95',
 36 verbose headers   'accept-ranges': 'bytes',
-36 verbose headers   date: 'Mon, 22 Aug 2016 06:07:37 GMT',
+36 verbose headers   date: 'Mon, 22 Aug 2016 06:09:01 GMT',
 36 verbose headers   via: '1.1 varnish',
 36 verbose headers   connection: 'keep-alive',
-36 verbose headers   'x-served-by': 'cache-fra1238-FRA',
+36 verbose headers   'x-served-by': 'cache-fra1240-FRA',
 36 verbose headers   'x-cache': 'MISS',
 36 verbose headers   'x-cache-hits': '0',
-36 verbose headers   'x-timer': 'S1471846055.822089,VS0,VE1264',
+36 verbose headers   'x-timer': 'S1471846140.488654,VS0,VE945',
 36 verbose headers   vary: 'Accept-Encoding' }
 37 verbose request invalidating /Users/liran/.npm/registry.npmjs.org/minlibjs on PUT
 38 error publish Failed PUT 403
