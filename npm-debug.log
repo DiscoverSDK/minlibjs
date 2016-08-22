@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/liran/Dropbox/work/courses/jscourse/minlibjs',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/liran/.npm/minlibjs/1.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/liran/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/liran/.npm/minlibjs/1.1.0/package.tgz',
+10 verbose tar pack   '/Users/liran/Dropbox/work/courses/jscourse/minlibjs' ]
+11 verbose tarball /Users/liran/.npm/minlibjs/1.1.0/package.tgz
+12 verbose folder /Users/liran/Dropbox/work/courses/jscourse/minlibjs
+13 info prepublish minlibjs@1.1.0
+14 verbose addLocalTarball adding from inside cache /Users/liran/.npm/minlibjs/1.1.0/package.tgz
+15 verbose correctMkdir /Users/liran/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd minlibjs@1.1.0
+17 verbose afterAdd /Users/liran/.npm/minlibjs/1.1.0/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/liran/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/liran/.npm/minlibjs/1.1.0/package/package.json written
+20 silly publish { name: 'minlibjs',
+20 silly publish   version: '1.1.0',
+20 silly publish   description: 'simple lib',
+20 silly publish   main: 'src/index.js',
+20 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git+https://github.com/DiscoverSDK/minlibjs.git' },
+20 silly publish   keywords: [ 'math' ],
+20 silly publish   author:
+20 silly publish    { name: 'Liran BH',
+20 silly publish      email: 'liran@discoversdk.com',
+20 silly publish      url: 'http://www.discoversdk.com/' },
+20 silly publish   license: 'MIT',
+20 silly publish   bugs: { url: 'https://github.com/DiscoverSDK/minlibjs/issues' },
+20 silly publish   homepage: 'https://github.com/DiscoverSDK/minlibjs#readme',
+20 silly publish   dependencies: { mathjs: '3.4.1' },
+20 silly publish   readme: '# minlibjs\nThis is a simple example how to create your own library\nmanage it using git, github, npm\n\nyou can find many examples and more resources in the site:\n\nhttp://www.discoversdk.com\n',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: '19bc4aeb65f47dcf8186538841f4ea81ad04ca80',
+20 silly publish   _id: 'minlibjs@1.1.0',
+20 silly publish   _shasum: '46846fdf954c4b9052570cf0c5f3554b1a31f89c',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name minlibjs
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'minlibjs',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'minlibjs',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/minlibjs
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/liran/.npm/minlibjs/1.1.0/package.tgz
+29 verbose request uri https://registry.npmjs.org/minlibjs
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 9:07:35 AM
+32 verbose request using bearer token for auth
+33 verbose request id a5742800a4adbb0b
+34 http request PUT https://registry.npmjs.org/minlibjs
+35 http 403 https://registry.npmjs.org/minlibjs
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Mon, 22 Aug 2016 06:07:37 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-fra1238-FRA',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1471846055.822089,VS0,VE1264',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /Users/liran/.npm/registry.npmjs.org/minlibjs on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.1.0." : minlibjs
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+40 verbose statusCode 403
+41 verbose pkgid minlibjs
+42 verbose cwd /Users/liran/Dropbox/work/courses/jscourse/minlibjs
+43 error Darwin 15.6.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.4.7
+46 error npm  v2.15.8
+47 error code E403
+48 error "You cannot publish over the previously published version 1.1.0." : minlibjs
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
